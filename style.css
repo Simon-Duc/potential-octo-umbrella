@@ -5,6 +5,7 @@ header {
     gap: 1rem;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    padding: 0.5rem;
 }
 
 header img {
@@ -19,38 +20,64 @@ header img {
     border-radius: 0.5rem;
 }
 
-label, #toggle {
-    display: none;
+a {color:inherit}
+
+#burger {
+  width:30px;
+  height:2px;
+  background-color: black;
+  display:inline-block;
+  position:relative;
+}
+#burger::before,
+#burger::after {
+  content:'';
+  width:30px;
+  height:2px;
+  background-color: black;
+  display:inline-block;
+  position:absolute;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+#burger::before {
+  top:-7px;
+}
+#burger::after {
+  top:7px;
 }
 
-nav {
-    height: 60px;
-    }
- 
-nav .main_pages {
-    display: none;
-    flex-direction: column;
-    background: white;
-    height: 10rem;
-    color: black;
-    list-style: none;
+#burger.open {
+  background:transparent;
 }
- 
-nav .main_pages a {
-    width: 50%;
+#burger.open::before {
+  transform: rotate(45deg);
+  top:0;
 }
- 
-label {
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0 auto;
-    font-size: 3rem;
-    color: black;
-    cursor: pointer;
+#burger.open::after {
+  transform: rotate(-45deg);
+  top:0;
 }
- 
-#toggle:checked + .main_pages {
-    display: flex;
+
+header {
+  position:relative;
+  max-width:500px;
+}
+ul {
+  background:pink;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:100%;
+  padding:10px 0;
+  transform:scaleY(0);
+  transform-origin:center top;
+  transition:all 0.3s ease;
+}
+ul.open {
+  transform:scaleY(1);
+}
+ul li {
+  padding:10px 0;
+  text-align:center
 }
