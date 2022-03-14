@@ -1,1 +1,56 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
 
+header img {
+    width: auto;
+    height: 2rem;
+}
+
+.switch-mode-button {
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+label, #toggle {
+    display: none;
+}
+
+nav {
+    height: 60px;
+    }
+ 
+nav .main_pages {
+    display: none;
+    flex-direction: column;
+    background: white;
+    height: 10rem;
+    color: black;
+    list-style: none;
+}
+ 
+nav .main_pages a {
+    width: 50%;
+}
+ 
+label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+}
+ 
+#toggle:checked + .main_pages {
+    display: flex;
+}
