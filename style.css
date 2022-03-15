@@ -20,6 +20,15 @@ header img {
     border-radius: 0.5rem;
 }
 
+main {
+    margin: 2rem auto 2rem auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+
 a {color:inherit}
 
 #burger {
@@ -64,7 +73,7 @@ header {
   max-width:500px;
 }
 ul {
-  background:pink;
+  background-color: #f76c6c;
   position:absolute;
   width:100%;
   left:0;
