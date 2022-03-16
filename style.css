@@ -24,24 +24,23 @@ header {
   gap: 1rem;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
-  padding: 0.5rem;
   margin: 0.5rem;
 }
 
 header img {
   width: auto;
-  height: 2rem;
+  height: 4rem;
 }
 
 .switch-mode-button {
   background-color: #f76c6c;
   color: black;
   padding: 0.25rem;
-  border-radius: 2rem;
+  border-radius: 0.75rem;
   box-shadow: 1px 2px 2px grey;
   font-family: 'WCS';
   font-size: 0.75rem;
-  height: 1.75rem;
+  height: 2rem;
   cursor: pointer;
 }
 
