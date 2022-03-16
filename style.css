@@ -21,6 +21,12 @@
 /* CSS Quentin */
 
 
+/* backgrounf-color body */
+
+body {
+  background-color: whitesmoke;
+ }
+
 /* Retirer puce ul */
 
 ul{
@@ -31,36 +37,65 @@ ul{
  Alignement vers la droite des div + background 
  et padding  */ 
 
-.scrool {
+.scroll {
   border: 1px solid black;
   width: 100%;
   overflow-x: scroll;
   display:flex;
   flex-direction:row;
-  background-color:lightgrey;
-  padding: 1rem;
-    
+  justify-content: space-between;
+  background-color:rgb(255, 192, 186);
 }
 
 /*taille image + padding */
 
-img{
-max-width: 200px;
-max-height: 160px;
+.scroll img{
+max-width: max-content;
 padding: 2rem;
 }
 
-/* Ajouter commentaire */
+/* taille titre h4 + padding*/
 
-.chat1 {
-  display: flex;
-  flex-direction: column;  
-}
 
-li {
+.scroll h4 {
+  padding: 1rem;
   text-align: center;
-  padding-top: 1rem;
 }
+
+/* Border right div */
+
+#chat1{
+border-right: 2px solid whitesmoke;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+#chat2{
+  border-right: 2px solid whitesmoke;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#chat3{
+    border-right: 2px solid whitesmoke;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}#chat4{
+  border-right: 2px solid whitesmoke;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  }
+
+#chat5{
+    border-right: 2px solid whitesmoke;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+    
+  
+      
+
 
 /*     Changer couleur img noir et blanc 
 
