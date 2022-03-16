@@ -103,3 +103,66 @@ header {
 .lead-paragraph {
   padding-bottom: 0.5rem;
 }
+/* 
+
+a {color:inherit}
+
+#burger {
+  width:30px;
+  height:2px;
+  background-color: black;
+  display:inline-block;
+  position:relative;
+}
+#burger::before,
+#burger::after {
+  content:'';
+  width:30px;
+  height:2px;
+  background-color: black;
+  display:inline-block;
+  position:absolute;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+#burger::before {
+  top:-7px;
+}
+#burger::after {
+  top:7px;
+}
+
+#burger.open {
+  background:transparent;
+}
+#burger.open::before {
+  transform: rotate(45deg);
+  top:0;
+}
+#burger.open::after {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+header {
+  position:relative;
+  max-width:500px;
+}
+ul {
+  background:pink;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:100%;
+  padding:10px 0;
+  transform:scaleY(0);
+  transform-origin:center top;
+  transition:all 0.3s ease;
+}
+ul.open {
+  transform:scaleY(1);
+}
+ul li {
+  padding:10px 0;
+  text-align:center
+} */
