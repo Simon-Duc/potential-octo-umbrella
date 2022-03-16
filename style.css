@@ -16,10 +16,6 @@
 }
 
 
-*{
-  margin: 0;
-  padding: 0;
-}
 
 #html-css {
 
@@ -105,3 +101,135 @@ details {
       flex-direction: row;
   }
 }
+
+/* Début CSS Simon */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin: 0.5rem;
+}
+
+.switch-mode-button {
+  background-color: #f76c6c;
+  color: black;
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 1px 2px 2px grey;
+  font-family: 'WCS';
+  font-size: 0.75rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: auto;
+  height: 4rem;
+}
+
+.burger-menu {
+  cursor: pointer;
+}
+
+.burger-menu span {
+  display: block;
+  height: 0.25rem;
+  width: 2rem;
+  margin: 0.25rem 0 0.25rem 0;
+  background: black;
+  border-radius: 0.25rem;
+}
+
+.lead-article {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.lead-details {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.lead-summary {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.lead-img {
+  max-width: 100%;
+  padding-bottom: 0.5rem;
+  margin: auto;
+}
+
+.lead-h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.lead-h2 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.lead-paragraph {
+  padding-bottom: 0.5rem;
+}
+
+/* Fin CSS Simon */
+
+/* CSS Quentin */
+
+
+/* Retirer puce ul */
+
+ul{
+  list-style-type: none ;
+}
+
+/* Div Scrool Border + taille + Scrool droite 
+ Alignement centrer + margin  */ 
+
+.scroll {
+  width: 100%;
+  overflow-x: scroll;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
+
+}
+
+/*taille image + padding */
+
+.scroll img{
+margin: 0.5rem;
+max-width: 150px;
+}
+/* align h4*/
+
+li h4 {
+  text-align: center;
+}
+
+
+    
+  
+
+/*     Changer couleur img noir et blanc 
+
+-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera 
+
+filter: grayscale(100%); Firefox */
+
+
+/* Fin CSS Quentin */
+
