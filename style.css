@@ -17,7 +17,7 @@
 
 
 
-#html-css {
+#html-css-course {
 
   height: 50vh;
   width: 100%;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-#javascript {
+#javascript-course {
 
   height: 50vh;
   width: 100%;
@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-#react {
+#react-course {
 
   height: 50vh;
   width: 100%;
@@ -87,7 +87,7 @@ summary {
   color: darkslategray;
 }
 
-details {
+.courses-details {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
