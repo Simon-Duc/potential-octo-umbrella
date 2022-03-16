@@ -145,3 +145,92 @@ filter: grayscale(100%); Firefox */
 
 
 /* Fin CSS Quentin */
+
+/* Début CSS Jaafar */
+
+#html-css {
+
+  height: 50vh;
+  width: 100%;
+  
+  background-color: #f76c6c;
+  background-image: url(https://dyma.fr/assets/technos/htmlcss-logo-title.svg);
+  background-size: cover;
+  background-blend-mode: darken;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#javascript {
+
+  height: 50vh;
+  width: 100%;
+  
+  background-color: #f76c6c;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#react {
+
+  height: 50vh;
+  width: 100%;
+  
+  background-color: #f76c6c;
+  background-image: url(https://www.datocms-assets.com/45470/1631110818-logo-react-js.png);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#teaching-methods {
+
+  height: 50vh;
+  width: 100%;
+  
+  background-color: #f76c6c;
+  background-image: url(https://cdn.pixabay.com/photo/2018/10/22/18/02/teacher-3765909_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+summary {
+  display: block;
+  padding: 0.5rem;
+  background-color: lightslategray;
+  color: darkslategray;
+}
+
+details {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: wheat;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 900px) {
+  details {
+      display: flex;
+      flex-direction: row;
+  }
+}
+
+/* Fin CSS Jaafar */
