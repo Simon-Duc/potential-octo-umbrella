@@ -119,6 +119,7 @@ header {
   color: black;
   padding: 0.25rem;
   border-radius: 0.75rem;
+  border-width: 0;
   box-shadow: 1px 2px 2px grey;
   font-family: 'WCS';
   font-size: 0.75rem;
@@ -131,17 +132,60 @@ header {
   height: 4rem;
 }
 
-.burger-menu {
+.menu {
   cursor: pointer;
 }
 
-.burger-menu span {
+.menu span {
   display: block;
   height: 0.25rem;
   width: 2rem;
   margin: 0.25rem 0 0.25rem 0;
-  background: black;
+  background-color: #f76c6c;
   border-radius: 0.25rem;
+  box-shadow: 1px 2px 2px grey;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-summary {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > .social-networks {
+  border: 1px solid black;
+  height: auto;
+  background-color: white;
+  box-shadow: 4px 4px 4px grey;
+  border: 0;
+  position: fixed;
+  border-radius: 2px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button li {
+  list-style: none;
+}
+
+.button li img {
+  width: 2rem;
+  background-color: white;
 }
 
 .lead-article {
@@ -176,6 +220,7 @@ header {
 }
 
 .lead-h2 {
+  text-align: center;
   font-size: 1rem;
   padding-bottom: 0.5rem;
 }
