@@ -109,63 +109,31 @@ ul{
 }
 
 /* Div Scrool Border + taille + Scrool droite 
- Alignement vers la droite des div + background 
- et padding  */ 
+ Alignement centrer + margin  */ 
 
 .scroll {
-  border: 1px solid black;
   width: 100%;
   overflow-x: scroll;
   display:flex;
   flex-direction:row;
-  justify-content: space-between;
-  background-color:rgb(255, 192, 186);
+  justify-content:space-between;
+  align-items: center;
+
 }
 
 /*taille image + padding */
 
 .scroll img{
-padding: 2rem;
+margin: 0.5rem;
+max-width: 150px;
 }
+/* align h4*/
 
-/* taille titre h4 + padding*/
-
-
-.scroll h4 {
-  padding: 1rem;
+li h4 {
   text-align: center;
 }
 
-/* Border right div */
 
-#chat1{
-border-right: 2px solid whitesmoke;
-margin-top: 1rem;
-margin-bottom: 1rem;
-}
-
-#chat2{
-  border-right: 2px solid whitesmoke;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-#chat3{
-    border-right: 2px solid whitesmoke;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-}#chat4{
-  border-right: 2px solid whitesmoke;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  }
-
-#chat5{
-    border-right: 2px solid whitesmoke;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
     
   
 
