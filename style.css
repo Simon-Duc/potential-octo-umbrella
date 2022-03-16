@@ -1,3 +1,6 @@
+/* Parametre global */
+
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +9,7 @@
 
 @font-face {
   font-family: "WCS";
-  src: url("/fonts/HAIDUO1H.TTF");
+  src: url("/HAIDUO1H.TTF");
 }
 
 :root {
@@ -14,3 +17,58 @@
   --primary-font: 'WCS';
   --background-color: whitesmoke;
 }
+
+/* CSS Quentin */
+
+
+/* Retirer puce ul */
+
+ul{
+  list-style-type: none ;
+}
+
+/* Div Scrool Border + taille + Scrool droite 
+ Alignement vers la droite des div + background 
+ et padding  */ 
+
+.scrool {
+  border: 1px solid black;
+  width: 100%;
+  overflow-x: scroll;
+  display:flex;
+  flex-direction:row;
+  background-color:lightgrey;
+  padding: 1rem;
+    
+}
+
+/*taille image + padding */
+
+img{
+max-width: 200px;
+max-height: 160px;
+padding: 2rem;
+}
+
+/* Ajouter commentaire */
+
+.chat1 {
+  display: flex;
+  flex-direction: column;  
+}
+
+li {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/*     Changer couleur img noir et blanc 
+
+-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera 
+
+filter: grayscale(100%); Firefox */
+
+
+/* Fin CSS Quentin */
+
+
