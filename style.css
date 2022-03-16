@@ -5,14 +5,20 @@
 }
 
 
+:root {
+  --primary-color: #f76c6c;
+  --primary-font: 'WCS';
+  --background-color: whitesmoke;
+}
+
 @font-face {
   font-family: "Old";
-  src: url("/fonts/OldLondon.ttf");
+  src: url("/OldLondon.ttf");
 }
 
 @font-face {
   font-family: "WCS";
-  src: url("/fonts/HAIDUO1H.TTF");
+  src: url("/HAIDUO1H.TTF");
 }
 
 header {
@@ -23,11 +29,6 @@ header {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   margin: 0.5rem;
-}
-
-header img {
-  width: auto;
-  height: 4rem;
 }
 
 .switch-mode-button {
@@ -42,43 +43,16 @@ header img {
   cursor: pointer;
 }
 
-main {
-  margin: 0.5rem;
-  display: flex;
-  justify-content: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.logo {
+  width: auto;
+  height: 4rem;
 }
 
-img {
-  max-width: 100%;
-}
-
-h1 {
-  text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1rem;
-}
-
-details {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid black;
-}
-
-summary {
-  display: block;
+.burger-menu {
   cursor: pointer;
 }
 
-div {
-  cursor: pointer;
-}
-
-span {
+.burger-menu span {
   display: block;
   height: 0.25rem;
   width: 2rem;
@@ -87,16 +61,42 @@ span {
   border-radius: 0.25rem;
 }
 
-/* .dropdown-menu-content {
-  display: none;
-  list-style: none;
-  background-color: rgba(179, 154, 154, 0.123);
-  width: 70px;
+.lead-article {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.lead-details {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.lead-summary {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.lead-img {
+  max-width: 100%;
+  padding-bottom: 0.5rem;
+  margin: auto;
+}
+
+.lead-h1 {
   text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
-.dropdown-menu-content li {
-  margin-bottom: 10px;
+
+.lead-h2 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
 }
-.visible {
-  display: block;
-} */
+
+.lead-paragraph {
+  padding-bottom: 0.5rem;
+}
