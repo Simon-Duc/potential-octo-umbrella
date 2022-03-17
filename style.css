@@ -289,10 +289,18 @@ filter: grayscale(100%); Firefox */
   margin: 0.5rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  align-items: baseline;
 }
 
 .actu img {
   max-width: 150px;
+ 
+}
+
+.actu h5 {
+  text-align: center;
+  padding: 0.2rem;
+  font-weight: normal;
 }
 
 .actu h6{
@@ -312,7 +320,7 @@ filter: grayscale(100%); Firefox */
   align-items: center;
   padding: 0.2rem;
   border-right:0.5px solid lightgray;
-  width:max-content;
+ 
  }
 
 .actu #test2 {
@@ -321,7 +329,7 @@ filter: grayscale(100%); Firefox */
   align-items: center;
   padding: 0.2rem;
   border-right: 0.5px solid lightgray;
-  width:max-content;
+ 
 }
 
 .actu #test3 {
@@ -330,7 +338,7 @@ filter: grayscale(100%); Firefox */
   align-items: center;
   padding: 0.2rem;
   border-right: 0.5px solid lightgray;
-  width:max-content;
+ 
 }
 
 
@@ -340,7 +348,7 @@ filter: grayscale(100%); Firefox */
   align-items: center;
   padding: 0.2rem;
   border-right: 0.5px solid lightgray;
-  width:max-content;
+
 }
 
 .actu #test5 {
@@ -348,6 +356,5 @@ filter: grayscale(100%); Firefox */
   flex-direction: column-reverse;
   align-items: center;
   padding: 0.2rem;
-  width:max-content;
  
 }
