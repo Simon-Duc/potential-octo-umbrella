@@ -1,0 +1,22 @@
+{
+  "name": "potential-octo-umbrella",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon-Duc/potential-octo-umbrella.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simon-Duc/potential-octo-umbrella/issues"
+  },
+  "homepage": "https://github.com/Simon-Duc/potential-octo-umbrella#readme",
+  "devDependencies": {
+    "w3c-html-validator": "^1.0.3"
+  }
+}
