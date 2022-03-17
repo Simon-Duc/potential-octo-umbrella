@@ -250,7 +250,8 @@ ul{
   flex-direction:row;
   justify-content:space-between;
   align-items: center;
-
+  
+   
 }
 
 /*taille image + padding */
@@ -278,3 +279,75 @@ filter: grayscale(100%); Firefox */
 
 /* Fin CSS Quentin */
 
+.actu {
+  width: 100%;
+  overflow-x: scroll;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.actu img {
+  max-width: 150px;
+}
+
+.actu h6{
+  text-align: center;
+  padding: 0.5rem;
+  color: #f76c6c
+}
+.actu h5 {
+  text-align: center;
+  padding: 0.2rem;
+  font-weight: normal;
+}
+
+.actu #test1 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0.2rem;
+  border-right:0.5px solid lightgray;
+  width:max-content;
+ }
+
+.actu #test2 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0.2rem;
+  border-right: 0.5px solid lightgray;
+  width:max-content;
+}
+
+.actu #test3 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0.2rem;
+  border-right: 0.5px solid lightgray;
+  width:max-content;
+}
+
+
+.actu #test4 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0.2rem;
+  border-right: 0.5px solid lightgray;
+  width:max-content;
+}
+
+.actu #test5 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0.2rem;
+  width:max-content;
+ 
+}
