@@ -6,7 +6,17 @@
 
 @font-face {
   font-family: "WCS";
-  src: url("/HAIDUO1H.TTF");
+  src: url("HAIDUO1H.TTF");
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url("Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "varela";
+  src: url("VarelaRound-Regular.ttf");
 }
 
 :root {
@@ -17,6 +27,11 @@
 
 body {
   background-color: var(--background-color);
+  font-family: raleway;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+  font-family: varela;
 }
 
 /* Début partie Jaafar */
