@@ -390,8 +390,8 @@ filter: grayscale(100%); Firefox */
 .article-container summary {
   display: flex;
   flex-direction: row-reverse;
-  min-height: 80px;
-  max-height: 15vh;
+  min-height: 200px;
+  max-height: 30vh;
 }
 
 body .article-container:nth-child(odd) summary {
@@ -411,7 +411,7 @@ body .article-container:nth-child(odd) summary {
 }
 
 .article-container {
-  margin: 1rem;
+  margin: 0.1rem 0 0.1rem 0;
 }
 
 /* Fin CSS Théo */
