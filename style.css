@@ -28,9 +28,10 @@ body {
 
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-top: 1px solid black;
 }
-
+.courses {
+ padding-left: 1rem; 
+}
 .subparts {
   display: inherit;
   width: 100vw;
