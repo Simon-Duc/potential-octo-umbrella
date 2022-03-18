@@ -298,6 +298,7 @@ filter: grayscale(100%); Firefox */
 .events-title {
   margin-top: 1rem;
   padding-top: 1rem;;
+  text-align: center;
 }
 .actu {
   width: 100%;
