@@ -425,4 +425,8 @@ body .article-container:nth-child(odd) summary {
   margin: 0.1rem 0 0.1rem 0;
 }
 
+.article-title {
+  text-align: center;
+}
+
 /* Fin CSS Théo */
