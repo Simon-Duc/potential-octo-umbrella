@@ -10,9 +10,8 @@
 <body>
     
     <!-- Début partie Simon -->
-  
   <header>
-        <div>   </div>
+        <div></div>
         <img class="logo" src="images/wild-post-logo2.png" alt="logo">
         <div class="menu">
             <details class="menu-details">
@@ -41,7 +40,7 @@
         </div>
 
     </header>
-    <div class="lead-article">
+    <div class="lead-article" id="lead-article">
         <details class="lead-details">
             <summary class="lead-summary">
                 <img class="lead-img" src="https://picsum.photos/400/200" alt="Random image">
@@ -57,7 +56,7 @@
   
     <!-- Début partie Théo -->
 
-    <details class="article-container">
+    <details class="article-container" id="sec-article">
         <summary>
         <div class="img-container">
           <img src="https://picsum.photos/200/300">
@@ -108,7 +107,7 @@
     <ul>
         <li>
             <h4>Nos Évenements</h4>
-            <div class="actu">
+            <div class="actu" id="actus">
                 <div id="test1"> 
                     <h5> Wild Talk (en ligne) - Data engineer : métier, opportunités, formation .</h5>
                     <h6> 31 Mar à 18:00 </h6>
@@ -143,7 +142,7 @@
   
     <!-- Début partie Jaafar -->
     <!--Je crée 4 details pour chaque partie de contenu de cours désirée.-->
-    <details class="courses-details"><!--La sous partie HTML/CSS-->
+    <details class="courses-details" id="cours"><!--La sous partie HTML/CSS-->
         <summary class="subparts">HTML/CSS</summary> <!--Chaque summary a la classe subprograms pour pouvoir leur appliquer le même CSS afin de garder une continuité sur la page et ne pas surcharger en couleur-->
         <div id="html-css-course"> <!--Chaque div a son propre id pour pouvoir les personnaliser avec une image de fond, ici la partie HTML/CSS-->
     Be sure to set the attribute 'open' within the 'details' element, and use a 'div' or another tag
@@ -204,6 +203,16 @@
             </div>
         </li>
     </ul>
-    
+    <footer>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#lead-article">Main</a></li>
+                <li><a href="#sec-article">Interviews</a></li>
+                <li><a href="#actus">Actualités</a></li>
+                <li><a href="#cours">Cours</a></li>
+            </ul>
+
+        </nav>
+    </footer>
 </body>
 </html>

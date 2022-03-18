@@ -15,8 +15,6 @@
   --background-color: whitesmoke;
 }
 
-
-
 #html-css-course {
 
   height: 50vh;
@@ -127,8 +125,7 @@ header {
 } */
 
 .logo {
-  width: auto;
-  height: 4rem;
+  max-height: 4rem;
   margin: 0.5rem;
   position: relative;
   left: 5%;
@@ -142,10 +139,6 @@ header {
   background-color: #f76c6c;
   border-radius: 0.25rem;
   /* box-shadow: 1px 2px 2px grey; */
-}
-.menu {
-  position: relative;
-  right: 5%;
 }
 
 .menu-summary {
@@ -162,22 +155,17 @@ details > summary::-webkit-details-marker {
 }
 
 .social-networks {
-  border: 1px solid black;
   height: auto;
   background-color: white;
   box-shadow: -1rem 1rem 1rem -0.5rem grey;
-  border: 0;
   position: fixed;
   border-radius: 2px;
-  padding: 0.5rem;
-  margin-right: 5rem;
+  padding: 0.5rem 0 0.5rem 0
 }
 
 .button {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
 }
 .button li {
   list-style: none;
@@ -228,6 +216,26 @@ details > summary::-webkit-details-marker {
   font-size: larger;
 }
 
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.navbar li a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  margin-top: 4rem;
+}
 /* Fin CSS Simon */
 
 /* CSS Quentin */
