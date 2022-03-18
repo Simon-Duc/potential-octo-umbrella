@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
 
+
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 1px solid black;
@@ -133,15 +134,14 @@
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
-.switch-mode-button {
+/* .switch-mode-button {
   background-color: #f76c6c;
   color: black;
   padding: 0.25rem;
@@ -152,15 +152,13 @@ header {
   font-size: 0.75rem;
   height: 2rem;
   cursor: pointer;
-}
+} */
 
 .logo {
-  width: auto;
-  height: 4rem;
-}
-
-.menu {
-  cursor: pointer;
+  max-height: 4rem;
+  margin: 0.5rem;
+  position: relative;
+  left: 5%;
 }
 
 .menu span {
@@ -170,18 +168,12 @@ header {
   margin: 0.25rem 0 0.25rem 0;
   background-color: #f76c6c;
   border-radius: 0.25rem;
-  box-shadow: 1px 2px 2px grey;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
+  /* box-shadow: 1px 2px 2px grey; */
 }
 
 .menu-summary {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }
 
 details > summary {
@@ -192,70 +184,88 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-details > .social-networks {
-  border: 1px solid black;
+.social-networks {
   height: auto;
   background-color: white;
-  box-shadow: 4px 4px 4px grey;
-  border: 0;
+  box-shadow: -1rem 1rem 1rem -0.5rem grey;
   position: fixed;
   border-radius: 2px;
+  padding: 0.5rem 0 0.5rem 0
 }
+
 .button {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .button li {
   list-style: none;
 }
 
 .button li img {
-  width: 2rem;
+  width: 3rem;
   background-color: white;
 }
 
 .lead-article {
-  margin: 0.5rem;
+  margin: 1rem;
   display: flex;
   justify-content: center;
+  line-height: 1.5;
 }
 
 .lead-details {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid black;
-  cursor: pointer;
 }
 
 .lead-summary {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }
 
 .lead-img {
   max-width: 100%;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   margin: auto;
 }
 
 .lead-h1 {
   text-align: center;
-  font-size: 1.5rem;
-  padding-bottom: 0.5rem;
+
+  padding-bottom: 1rem;
 }
 
 .lead-h2 {
   text-align: center;
-  font-size: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .lead-paragraph {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: larger;
 }
 
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.navbar li a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  margin-top: 4rem;
+}
 /* Fin CSS Simon */
 
 /* CSS Quentin */
@@ -385,3 +395,53 @@ filter: grayscale(100%); Firefox */
   padding: 0.2rem;
  
 }
+
+/* Début CSS Théo */
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 5%;
+}
+
+.article-container summary {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 200px;
+  max-height: 30vh;
+}
+
+body .article-container:nth-child(odd) summary {
+  flex-direction: row;
+}
+
+.article-container article {
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.title-container h3 {
+  text-align: center;
+}
+.title-container h4 {
+  text-align: center;
+}
+
+.article-container {
+  margin: 0.1rem 0 0.1rem 0;
+}
+
+/* Fin CSS Théo */

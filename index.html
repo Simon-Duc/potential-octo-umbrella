@@ -10,10 +10,9 @@
 <body>
     
     <!-- Début partie Simon -->
-  
   <header>
-        <input class="switch-mode-button" type="button" value="2014">
-        <img class="logo" src="images/wild-post-logo.png" alt="logo">
+        <div></div>
+        <img class="logo" src="images/wild-post-logo2.png" alt="logo">
         <div class="menu">
             <details class="menu-details">
                 <summary class="menu-button">
@@ -24,29 +23,29 @@
                 <div class="social-networks">
                     <ul class="button">
                         <li><a href="https://www.facebook.com/WildCodeSchool/">
-                            <img src="/images/logo-facebook.png" alt="facebook"></a></li>
+                            <img src="images/logo-facebook.png" alt="facebook"></a></li>
                         <li><a href="https://twitter.com/wildcodeschool">
-                            <img src="/images/logo-twitter.png" alt="twitter"></a></li>
+                            <img src="images/logo-twitter.png" alt="twitter"></a></li>
                         <li><a href="https://github.com/WildCodeSchool">
-                            <img src="/images/logo-github.png" alt="github"></a></li>
+                            <img src="images/logo-github.png" alt="github"></a></li>
                         <li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw">
-                            <img src="/images/logo-youtube.png" alt="youtube"></a></li>
+                            <img src="images/logo-youtube.png" alt="youtube"></a></li>
                         <li><a href="https://www.instagram.com/wildcodeschoolofficial/?hl=en">
-                            <img src="/images/logo-instagram.png" alt="instagram"></a></li>
+                            <img src="images/logo-instagram.png" alt="instagram"></a></li>
                         <li><a href="https://www.linkedin.com/school/wild-code-school/">
-                            <img src="/images/logo-linkedin.png" alt="linkedin"></a></li>
+                            <img src="images/logo-linkedin.png" alt="linkedin"></a></li>
                     </ul>
                 </div>
             </details>
         </div>
 
     </header>
-    <div class="lead-article">
+    <div class="lead-article" id="lead-article">
         <details class="lead-details">
             <summary class="lead-summary">
                 <img class="lead-img" src="https://picsum.photos/400/200" alt="Random image">
                 <h1 class="lead-h1">Lorem ipsum dolor</h1>
-                <h2 class="lead-h2">Repellat dolor, earum excepturi dolore perspiciatis</h2>
+                <h2 class="lead-h2">Repellat dolor, earum excepturi dolore perspiciatis. Quam incidunt illum temporibus consequatur deleniti praesentium, porro totam.</h2>
             </summary>
             <p class="lead-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure omnis facilis repudiandae voluptates laborum architecto eos delectus libero recusandae soluta officia modi veritatis cumque accusamus, enim atque impedit minima.
             Ad id cupiditate, inventore enim, perferendis vero iusto quis mollitia hic fugiat qui aspernatur? Ea minima laboriosam inventore aspernatur, tenetur neque delectus dolores illum, dolor maiores maxime architecto? </p>
@@ -56,6 +55,49 @@
     <!-- Fin partie Simon --> 
   
     <!-- Début partie Théo -->
+
+    <details class="article-container" id="sec-article">
+        <summary>
+        <div class="img-container">
+          <img src="https://picsum.photos/200/300">
+        </div>
+        <div class="title-container">
+          <h4>Subtitle</h4>
+          <h3>This one is a title</h3>
+        </div>
+        </summary>
+        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+        
+      </details>
+
+      <details class="article-container">
+        <summary>
+        <div class="img-container">
+          <img src="https://picsum.photos/200/300">
+        </div>
+        <div class="title-container">
+          <h4>Subtitle</h4>
+          <h3>This one is a title</h3>
+        </div>
+        </summary>
+        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+        
+      </details>
+
+      <details class="article-container">
+        <summary>
+        <div class="img-container">
+          <img src="https://picsum.photos/200/300">
+        </div>
+        <div class="title-container">
+          <h4>Subtitle</h4>
+          <h3>This one is a title</h3>
+        </div>
+        </summary>
+        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+        
+      </details>
+
     <!-- Fin partie Théo --> 
   
     <!-- Début partie Quentin -->
@@ -65,7 +107,7 @@
     <ul>
         <li>
             <h4>Nos Évenements</h4>
-            <div class="actu">
+            <div class="actu" id="actus">
                 <div id="test1"> 
                     <h5> Wild Talk (en ligne) - Data engineer : métier, opportunités, formation .</h5>
                     <h6> 31 Mar à 18:00 </h6>
@@ -101,6 +143,7 @@
     <!-- Début partie Jaafar -->
     <h2 id="courses-title">Contenu des cours</h2>
     <!--Je crée 4 details pour chaque partie de contenu de cours désirée.-->
+  
     <div class="courses">
         <details class="courses-details"><!--La sous partie HTML/CSS-->
             <summary class="subparts">HTML/CSS</summary> <!--Chaque summary a la classe subprograms pour pouvoir leur appliquer le même CSS afin de garder une continuité sur la page et ne pas surcharger en couleur-->
@@ -160,6 +203,16 @@
             </div>
         </li>
     </ul>
-    
+    <footer>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#lead-article">Main</a></li>
+                <li><a href="#sec-article">Interviews</a></li>
+                <li><a href="#actus">Actualités</a></li>
+                <li><a href="#cours">Cours</a></li>
+            </ul>
+
+        </nav>
+    </footer>
 </body>
 </html>
