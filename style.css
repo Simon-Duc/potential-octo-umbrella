@@ -29,9 +29,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.courses {
- padding-left: 1rem; 
-}
+
 .subparts {
   display: inherit;
   width: 100vw;
