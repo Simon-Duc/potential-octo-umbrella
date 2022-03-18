@@ -240,6 +240,7 @@ filter: grayscale(100%); Firefox */
 /* Fin CSS Quentin */
 .partners {
   padding-top: 1rem;
+  text-align: center;
 }
 
 .events-title {
