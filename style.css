@@ -298,6 +298,7 @@ filter: grayscale(100%); Firefox */
 .events-title {
   margin-top: 1rem;
   padding-top: 1rem;;
+  text-align: center;
 }
 .actu {
   width: 100%;
@@ -423,6 +424,10 @@ body .article-container:nth-child(odd) summary {
 
 .article-container {
   margin: 0.1rem 0 0.1rem 0;
+}
+
+.article-title {
+  text-align: center;
 }
 
 /* Fin CSS Théo */
