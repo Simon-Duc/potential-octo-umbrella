@@ -34,6 +34,11 @@ body h1, h2, h3, h4, h5, h6 {
   font-family: varela;
 }
 
+.subtitle {
+  padding: 1rem;
+  text-align: center;
+}
+
 /* Début partie Jaafar */
 
 #courses-title {
@@ -406,6 +411,14 @@ body .article-container:nth-child(odd) summary {
 
   .article-container {
     margin: 0.1rem 15vw 0.1rem 15vw;
+  }
+
+  .img-container {
+    width: 30%;
+  }
+
+  .title-container {
+    width: 70%;
   }
 
 }
