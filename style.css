@@ -37,108 +37,57 @@ body h1, h2, h3, h4, h5, h6 {
 /* Début partie Jaafar */
 
 #courses-title {
-  display: flex;
-  justify-content: center;
-
-
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .subparts {
-  display: inherit;
-  width: 100vw;
-  
-
   font-weight: bolder;
   color: black;
   line-height: 1.5;
+}
 
+.courses {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .courses-details {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  
 }
 
-#quests {
+#quests, #live-coding, #lessons, #projects {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
   height: 50vh;
-  width: 100%;
   
-  background-color: #f76c6c;
-  background-image: url(https://dyma.fr/assets/technos/htmlcss-logo-title.svg);
-  background-size: cover;
-  background-blend-mode: lighten;
+  
+  background-color: hsl(0, 90%, 70%, 0.7);
+
+  border-radius: 15% / 25%;
 
   
   justify-content: center;
   align-items: center;
-}
-
-#live-coding {
-
-  height: 50vh;
-  width: 100%;
-  
-  background-color: #f76c6c;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: lighten;
-
-  
-  justify-content: center;
-  align-items: center;
-}
-
-#lessons {
-
-  height: 50vh;
-  width: 100%;
-  
-  background-color: #f76c6c;
-  background-image: url(https://www.datocms-assets.com/45470/1631110818-logo-react-js.png);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: lighten;
-
-  
-  justify-content: center;
-  align-items: center;
-}
-
-#projects {
-
-  height: 50vh;
-  width: 100%;
-  
-  background-color: #f76c6c;
-  background-image: url(https://cdn.pixabay.com/photo/2018/10/22/18/02/teacher-3765909_1280.jpg);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: lighten;
-
-  
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 700px) {
  
   .courses {
-    display: flex;
-   width: 100%;
-   flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
   }
   
   .courses-details {
-   width: 25vw;
+    text-align: center;
   }
 
-  .subparts {
-    width: 25vw;
+  #quests, #live-coding, #lessons, #projects {
+    border-radius: 25% / 10%;
   }
  
 }
@@ -222,12 +171,14 @@ details > summary::-webkit-details-marker {
   padding: 0 1rem 1rem 1rem;
 }
 
+.sticky {
+  position: sticky;
+  bottom: 0;
+}
+
 .navbar {
-  position: fixed;
   display: flex;
   justify-content: space-between;
-  bottom: 0;
-  width: 100%;
   background: white;
   border-top: 1px solid lightgrey;
   padding: 1rem;
@@ -237,10 +188,6 @@ details > summary::-webkit-details-marker {
   text-align: center;
   text-decoration: none;
   color: black;
-}
-
-footer {
-  margin-top: 4rem;
 }
 /* Fin CSS Simon */
 
