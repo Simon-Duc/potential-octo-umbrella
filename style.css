@@ -403,5 +403,13 @@ body .article-container:nth-child(odd) summary {
     margin: 0.1rem 15vw 0.1rem 15vw;
   }
 
+  .img-container {
+    width: 30%;
+  }
+
+  .title-container {
+    width: 70%;
+  }
+
 }
 /* Fin CSS Théo */
