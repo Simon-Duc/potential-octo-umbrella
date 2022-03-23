@@ -173,8 +173,6 @@ details > summary::-webkit-details-marker {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
 }
 .button li a {
   display: flex;
@@ -193,7 +191,6 @@ details > summary::-webkit-details-marker {
   display: flex;
   justify-content: center;
   line-height: 1.5;
-  border-bottom: 1px solid lightgrey;
 }
 
 .lead-details {
