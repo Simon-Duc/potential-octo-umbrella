@@ -154,11 +154,11 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .logo {
   max-height: 4rem;
-  margin: 0.5rem;
 }
 
 details > summary {
@@ -169,29 +169,31 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-.social-networks {
-  height: auto;
-  border-radius: 2px;
-  padding-bottom: 0.5rem
-}
-
 .button {
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 }
-.button li {
+.button li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
+  text-align: center;
 }
 
-.button li img {
+.button li a img {
   width: 1.5rem;
-  background-color: white;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .lead-article {
   display: flex;
   justify-content: center;
   line-height: 1.5;
+  border-bottom: 1px solid lightgrey;
 }
 
 .lead-details {
@@ -212,10 +214,12 @@ details > summary::-webkit-details-marker {
 
 .lead-h1 {
   text-align: center;
+  padding: 0 1rem 0 1rem;
 }
 
 .lead-h2 {
   text-align: center;
+  padding: 0 1rem 0 1rem;
 }
 
 .lead-paragraph {
@@ -241,6 +245,18 @@ details > summary::-webkit-details-marker {
 
 footer {
   margin-top: 4rem;
+}
+
+@media screen and (min-width: 700px) {
+  .logo {
+    max-width: 20%;
+    height: auto;
+  }
+  .button li a img {
+    min-width: 20%;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
 }
 /* Fin CSS Simon */
 
