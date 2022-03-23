@@ -63,7 +63,7 @@ body h1, h2, h3, h4, h5, h6 {
   
 }
 
-#html-css-course {
+#quests {
   height: 50vh;
   width: 100%;
   
@@ -77,7 +77,7 @@ body h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-#javascript-course {
+#live-coding {
 
   height: 50vh;
   width: 100%;
@@ -93,7 +93,7 @@ body h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-#react-course {
+#lessons {
 
   height: 50vh;
   width: 100%;
@@ -109,7 +109,7 @@ body h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-#teaching-methods {
+#projects {
 
   height: 50vh;
   width: 100%;
