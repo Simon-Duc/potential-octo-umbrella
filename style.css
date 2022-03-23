@@ -38,17 +38,17 @@ body h1, h2, h3, h4, h5, h6 {
 
 #courses-title {
   text-align: center;
-  padding: 1rem;
+  padding: 1.1rem;
 }
 
 .subparts {
   font-weight: bolder;
   color: black;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 .courses {
-  padding: 1rem;
+  padding: 1.1rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -62,7 +62,7 @@ body h1, h2, h3, h4, h5, h6 {
 #quests, #live-coding, #lessons, #projects {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.1rem;
   height: 50vh;
   
   
@@ -95,7 +95,7 @@ body h1, h2, h3, h4, h5, h6 {
 /* Fin partie Jaafar */
 
 /* Début CSS Simon */
-article {
+p {
   font-size: 1rem;
 }
 
@@ -103,7 +103,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.1rem;
 }
 
 .logo {
@@ -139,18 +139,8 @@ details > summary::-webkit-details-marker {
 .lead-article {
   display: flex;
   justify-content: center;
-  line-height: 1.5;
-}
-
-.lead-details {
-  display: flex;
-  justify-content: center;
-}
-
-.lead-summary {
-  display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
+  line-height: 1.25;
 }
 
 .lead-img {
@@ -160,16 +150,18 @@ details > summary::-webkit-details-marker {
 
 .lead-h1 {
   text-align: center;
-  padding: 0 1rem 0 1rem;
+  padding: 0.25rem 1.1rem 0.25rem 1.1rem;
+  font-size: 1.75rem;
 }
 
 .lead-h2 {
   text-align: center;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1.1rem 0.25rem 1.1rem;
+  font-size: large;
 }
 
 .lead-paragraph {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1.1rem 1.1rem 1.1rem;
 }
 
 .sticky {
@@ -180,9 +172,9 @@ details > summary::-webkit-details-marker {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background: white;
+  background: var(--background-color);
   border-top: 1px solid lightgrey;
-  padding: 1rem;
+  padding: 1.1rem;
 }
 
 .navbar li a {
@@ -203,6 +195,20 @@ footer {
   .button li a img {
     min-width: 20%;
     margin: 0.5rem 0 0.5rem 0;
+  }
+  .lead-h1 {
+    text-align: center;
+    padding: 1rem 15% 1rem 15%;
+    font-size: 2rem;
+  }
+  .lead-h2 {
+    text-align: center;
+    padding: 0 15% 1rem 15%;
+    font-size: large;
+  }
+  
+  .lead-paragraph {
+    padding: 0 15% 1rem 15%;
   }
 
 }
@@ -228,8 +234,6 @@ ul{
   flex-direction:row;
   justify-content:space-between;
   align-items: center;
-  
-   
 }
 
 /*taille image + padding */
@@ -257,13 +261,13 @@ filter: grayscale(100%); Firefox */
 
 /* Fin CSS Quentin */
 .partners {
-  padding-top: 1rem;
+  padding-top: 1.1rem;
   text-align: center;
 }
 
 .events-title {
-  margin-top: 1rem;
-  padding-top: 1rem;;
+  margin-top: 1.1rem;
+  padding-top: 1.1rem;;
   text-align: center;
 }
 .actu {
@@ -378,8 +382,9 @@ body .article-container:nth-child(odd) summary {
 }
 
 .article-container article {
-  padding: 1rem;
-  line-height: 1.5;
+  padding: 1.1rem;
+  line-height: 1.25;
+  font-size: 1rem;
 }
 
 .title-container h3 {
