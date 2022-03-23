@@ -379,4 +379,11 @@ body .article-container:nth-child(odd) summary {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+
+  .article-container {
+    margin: 0.1rem 15vw 0.1rem 15vw;
+  }
+
+}
 /* Fin CSS Théo */
