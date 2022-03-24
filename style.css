@@ -266,6 +266,47 @@ li h4 {
   text-align: center;
 }
 
+@media screen and (min-width: 700px){
+.navbar {
+ display: none;
+}
+.footer-all{
+  width: 100%;
+  height: 5rem;
+  background-color: gray;
+  margin-top: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between
+}
+.footer-left{
+  width: 70%;
+  align-self: center;
+margin-left: 2rem;
+}
+.footer-right{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+}
+.footer-right h3 {
+  text-align:center;
+   color: whitesmoke;
+}
+
+}
+
+@media screen and (max-width:700px){
+
+  .footer-all {
+    display: none;
+  }
+  
+    
+  }
+
 
     
   
@@ -399,17 +440,26 @@ body .article-container:nth-child(odd) summary {
   flex-direction: row;
 }
 
-.article-container article {
-  padding: 1.1rem;
-  line-height: 1.25;
-  font-size: 1rem;
+body .article-container:nth-child(odd) summary .title-container h3{
+  align-self: flex-start;
 }
 
+body .article-container:nth-child(odd) summary .title-container h4{
+  align-self: flex-start;
+}
+@media screen and (max-width:1024px){
+
+  .footer-all {
+    display: none;
+  }
+  
+    
+  }
 .title-container h3 {
-  text-align: center;
+  align-self: flex-end;
 }
 .title-container h4 {
-  text-align: center;
+  align-self: flex-end;
 }
 
 .article-container {
@@ -435,4 +485,6 @@ body .article-container:nth-child(odd) summary {
   }
 
 }
+
+
 /* Fin CSS Théo */
