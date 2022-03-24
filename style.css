@@ -442,11 +442,11 @@ body .article-container:nth-child(odd) summary {
 }
 
 body .article-container:nth-child(odd) summary .title-container h3{
-  align-self: flex-start;
+  text-align: left;
 }
 
 body .article-container:nth-child(odd) summary .title-container h4{
-  align-self: flex-start;
+  text-align: left;
 }
 @media screen and (max-width:1024px){
 
@@ -457,10 +457,12 @@ body .article-container:nth-child(odd) summary .title-container h4{
     
   }
 .title-container h3 {
-  align-self: flex-end;
+  width: 100%;
+  text-align: end;
 }
 .title-container h4 {
-  align-self: flex-end;
+  width: 100%;
+  text-align: end;
 }
 
 .article-container {
@@ -469,6 +471,17 @@ body .article-container:nth-child(odd) summary .title-container h4{
 
 .article-title {
   text-align: center;
+}
+
+.question {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0 1rem;
+}
+
+.answer {
+  text-align: justify;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
