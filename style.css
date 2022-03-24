@@ -270,11 +270,22 @@ details > summary::-webkit-details-marker {
   .lead-paragraph {
     padding: 0 15% 1rem 15%;
   }
+
   .sticky {
     top: 0;
     bottom: initial;
     order: -1;
   }
+
+  .lead-img {
+    max-width: 80%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
 }
 
 /* Fin CSS Simon */
