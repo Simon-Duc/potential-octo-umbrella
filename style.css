@@ -37,7 +37,7 @@ body h1, h2, h3, h4, h5, h6 {
 }
 
 .subtitle {
-  padding: 1rem;
+  padding: 0 1.1rem 0 1.1rem ;
   text-align: center;
 }
 
@@ -130,7 +130,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.1rem;
+  padding: 0.5rem;
 }
 
 .logo {
@@ -149,6 +149,7 @@ details > summary::-webkit-details-marker {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0.5rem;
 }
 .button li a {
   display: flex;
@@ -173,17 +174,18 @@ details > summary::-webkit-details-marker {
 .lead-img {
   max-width: 100%;
   margin: auto;
+  margin-bottom: 1rem; 
 }
 
 .lead-h1 {
   text-align: center;
-  padding: 0.25rem 1.1rem 0.25rem 1.1rem;
+  padding: 0.5rem 1.1rem 0.5rem 1.1rem;
   font-size: 1.75rem;
 }
 
 .lead-h2 {
   text-align: center;
-  padding: 0 1.1rem 0.25rem 1.1rem;
+  padding: 0.5rem 1.1rem 0.5rem 1.1rem;
   font-size: large;
 }
 
@@ -319,13 +321,13 @@ filter: grayscale(100%); Firefox */
 
 /* Fin CSS Quentin */
 .partners {
-  padding-top: 1.1rem;
+  padding-top: 1rem;
   text-align: center;
 }
 
 .events-title {
-  margin-top: 1.1rem;
-  padding-top: 1.1rem;;
+  margin-top: 1rem;
+  padding-top: 1rem;;
   text-align: center;
 }
 .actu {
