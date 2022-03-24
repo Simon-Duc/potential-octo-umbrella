@@ -528,6 +528,10 @@ body .article-container:nth-child(odd) summary .title-container h5{
   margin: 0.1rem 0 0.1rem 0;
 }
 
+.article-container article {
+  line-height: 1.5;
+}
+
 .article-title {
   text-align: center;
 }
