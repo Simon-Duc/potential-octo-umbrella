@@ -242,9 +242,6 @@ details > summary::-webkit-details-marker {
     max-width: 20%;
     height: auto;
   }
-  .button {
-    display: none;
-  }
   .lead-h1 {
     text-align: center;
     padding: 1rem 15% 1rem 15%;
@@ -301,56 +298,40 @@ li h4 {
   text-align: center;
 }
 
-@media screen and (min-width: 700px){
-}
 .footer-all{
-  width: 100%;
   background-color: gray;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-content: space-between;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
+  gap: 1rem;
+}
+@media screen and (min-width: 700px) {
+  .footer-all {
+    flex-direction: row;
+  }
 }
 .footer-left{
-  width: 70%;
   align-self: center;
-  margin-left: 2rem;
 }
 .footer-right{
-  width: 30%;
   display: flex;
   flex-direction: column;
-   justify-content: center;
+  justify-content: center;
 }
 .footer-right h3 {
   text-align:center;
-   color: whitesmoke;
+  color: whitesmoke;
 }
 
-@media screen and (max-width:700px){
-
-  .footer-all {
-    display: none;
-  }
-<<<<<<< HEAD
-  
-    
-  }
-
-  .jeu {
-    text-align: center;
-  }
-
-  .jeu h2 {
-    padding: 1rem;
-  }
-=======
+.jeu {
+  text-align: center;
 }
->>>>>>> 384a42a6a6b28bb108c37ca88bed6831acf88311
 
-
-
+.jeu h2 {
+  padding: 1rem;
+}
 
 /* Fin CSS Quentin */
 .partners {
@@ -481,14 +462,7 @@ body .article-container:nth-child(odd) summary .title-container h3{
 body .article-container:nth-child(odd) summary .title-container h4{
   text-align: left;
 }
-@media screen and (max-width:1024px){
 
-  .footer-all {
-    display: none;
-  }
-  
-    
-  }
 .title-container h3 {
   width: 100%;
   text-align: end;
