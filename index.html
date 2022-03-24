@@ -11,7 +11,7 @@
 <body>
     
     <!-- Début partie Simon -->
-  <header>
+    <header>
         <div class="logo-flex">
             <img class="logo" src="images/wild-post-logo2.png" alt="logo">        
         </div>
@@ -30,7 +30,6 @@
                     <img src="images/logo-linkedin.png" alt="linkedin"></a></li>
             </ul>
         </div>
-
     </header>
     <article class="lead-article" id="lead-article">
         <img class="lead-img" src="https://picsum.photos/800/400" alt="Random image">
@@ -256,7 +255,10 @@
   
     <div class="courses" id="cours">
         <details class="courses-details"><!--La sous partie HTML/CSS-->
-            <summary class="subparts">Quêtes et Dojos</summary> <!--Chaque summary a la classe subprograms pour pouvoir leur appliquer le même CSS afin de garder une continuité sur la page et ne pas surcharger en couleur-->
+            <summary>
+                <div class="subparts">Quêtes et Dojos</div>
+                <img class="list-style" src="images/down-arrow-1.png" alt="flèche">
+            </summary> <!--Chaque summary a la classe subprograms pour pouvoir leur appliquer le même CSS afin de garder une continuité sur la page et ne pas surcharger en couleur-->
             <ul id="quests"> <!--Chaque liste a son propre id pour pouvoir les personnaliser avec une image de fond, ici la partie HTML/CSS-->
                 <li>Quêtes : exercices sur la plateforme Odyssey découpés en expéditions par semaine</li>
                 <li>Validation par les paires</li>
@@ -265,7 +267,10 @@
             </ul>
         </details>
         <details class="courses-details"><!--La sous partie Javascript-->
-            <summary class="subparts">Live Coding</summary>
+            <summary>
+                <div class="subparts">Live Coding</div>
+                <img class="list-style" src="images/down-arrow-1.png" alt="flèche">
+            </summary>
             <ul id="live-coding">
                 <li>Séance de coding réalisée en direct par le formateur</li>
                 <li>Correction d'exercices de quêtes ou de workshops</li>
@@ -273,7 +278,10 @@
             </ul>
         </details>
         <details class="courses-details"><!--La sous partie React-->
-            <summary class="subparts">Cours</summary>
+            <summary>
+                <div class="subparts">Cours</div>
+                <img class="list-style" src="images/down-arrow-1.png" alt="flèche">
+            </summary>
             <ul id="lessons">
                 <li>Après les quêtes sur un sujet donné</li>
                 <li>Notions vues quelques heures avant en quête</li>
@@ -282,7 +290,10 @@
             </ul>
         </details>
         <details class="courses-details"><!--La sous partie Méthodes Pédagogiques-->
-            <summary class="subparts">Projets</summary>
+            <summary>
+                <div class="subparts">Projets</div>
+                <img class="list-style" src="images/down-arrow-1.png" alt="flèche">
+            </summary>
             <ul id="projects">
                 <li>3 projets en équipe validés et présentés aux formateurs</li>
                 <li><a href="https://nibor51.github.io/scaling-journey/">Exemple de projet 1</a></li>
@@ -324,38 +335,38 @@
             </div>
         </li>
     </ul>
-
-    <footer class="sticky">
-        <nav>
-            <ul class="navbar">
-                <li><a href="#lead-article">Main</a></li>
-                <li><a href="#sec-article">Interviews</a></li>
-                <li><a href="#actus">Actualités</a></li>
-                <li><a href="#cours">Cours</a></li>
-            </ul>
-        </nav>
+    <footer>
         <div class="footer-all">
-        <div class="footer-left">
-        <img src="images/logo-wild-code-school.png" alt="logo-wild-code-school">
+            <div class="footer-left">
+                <img src="images/logo-wild-code-school.png" alt="logo-wild-code-school">
+            </div>
+            <div class="footer-right">
+                <h3>Les réseaux de la Wild Code School !</h3>
+                <ul class="button">
+                    <li><a href="https://www.facebook.com/WildCodeSchool/">
+                        <img src="images/logo-facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/wildcodeschool">
+                        <img src="images/logo-twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://github.com/WildCodeSchool">
+                        <img src="images/logo-github.png" alt="github"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw">
+                        <img src="images/logo-youtube.png" alt="youtube"></a></li>
+                    <li><a href="https://www.instagram.com/wildcodeschoolofficial/?hl=en">
+                        <img src="images/logo-instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/school/wild-code-school/">
+                        <img src="images/logo-linkedin.png" alt="linkedin"></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-right">
-        <h3>Les réseaux de la Wild Code School !</h3>
-        <ul class="button">
-            <li><a href="https://www.facebook.com/WildCodeSchool/">
-                <img src="images/logo-facebook.png" alt="facebook"></a></li>
-            <li><a href="https://twitter.com/wildcodeschool">
-                <img src="images/logo-twitter.png" alt="twitter"></a></li>
-            <li><a href="https://github.com/WildCodeSchool">
-                <img src="images/logo-github.png" alt="github"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw">
-                <img src="images/logo-youtube.png" alt="youtube"></a></li>
-            <li><a href="https://www.instagram.com/wildcodeschoolofficial/?hl=en">
-                <img src="images/logo-instagram.png" alt="instagram"></a></li>
-            <li><a href="https://www.linkedin.com/school/wild-code-school/">
-                <img src="images/logo-linkedin.png" alt="linkedin"></a></li>
-        </ul>
-    </div>
-    </div>
     </footer>
+
+    <nav class="sticky">
+        <ul class="navbar">
+            <li><a href="#lead-article">Main</a></li>
+            <li><a href="#sec-article">Interviews</a></li>
+            <li><a href="#actus">Actualités</a></li>
+            <li><a href="#cours">Cours</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
