@@ -85,7 +85,23 @@ body h1, h2, h3, h4, h5, h6 {
 
 .list-style {
   width: 1rem;
+  cursor: pointer;
 }
+
+
+#projects li a {
+  text-decoration: none;
+  color: black;
+  transition-property: color, transform;
+  transition-duration: 0.3s;
+}
+
+#projects li a:hover {
+  color: white;
+  transform: scale(1.2);
+  display: inline-block;
+}
+
 
 @media screen and (min-width: 700px) {
  
