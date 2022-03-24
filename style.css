@@ -205,6 +205,7 @@ details > summary::-webkit-details-marker {
   max-width: 100%;
   margin: auto;
   margin-bottom: 1rem; 
+  border-radius: 0.5rem;
 }
 
 .lead-h1 {
@@ -233,7 +234,6 @@ details > summary::-webkit-details-marker {
   justify-content: space-around;
   background: var(--background-color);
   border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
   padding: 1.1rem;
   font-weight: bold;
 }
@@ -248,6 +248,11 @@ details > summary::-webkit-details-marker {
   .logo {
     max-width: 20%;
     height: auto;
+  }
+  .lead-img {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 1rem; 
   }
   .lead-h1 {
     text-align: center;
