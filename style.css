@@ -97,8 +97,8 @@ body h1, h2, h3, h4, h5, h6 {
   height: 30vh;
   gap: 1rem;
   
-  background-color: hsl(0, 90%, 70%, 0.7);
-
+  background-color: hsl(0, 90%, 70%);
+  color: white;
   border-radius: 15% / 25%;
 
   
@@ -115,13 +115,13 @@ body h1, h2, h3, h4, h5, h6 {
 
 #projects li a {
   text-decoration: none;
-  color: black;
+  color: inherit;
   transition-property: color, transform;
   transition-duration: 0.3s;
 }
 
 #projects li a:hover {
-  color: white;
+  color: black;
   transform: scale(1.2);
   display: inline-block;
 }
