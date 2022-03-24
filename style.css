@@ -150,6 +150,10 @@ p {
   font-size: 1rem;
 }
 
+header {
+  order: -1;
+}
+
 .logo-flex {
   display: flex;
   justify-content: center;
@@ -229,6 +233,7 @@ details > summary::-webkit-details-marker {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   padding: 1.1rem;
+  font-weight: bold;
 }
 
 .navbar li a {
@@ -252,7 +257,9 @@ details > summary::-webkit-details-marker {
     padding: 0 15% 1rem 15%;
     font-size: large;
   }
-  
+  .button {
+    display: none;
+  }
   .lead-paragraph {
     padding: 0 15% 1rem 15%;
   }
