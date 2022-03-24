@@ -285,6 +285,15 @@ margin-left: 2rem;
 
 }
 
+@media screen and (max-width:700px){
+
+  .footer-all {
+    display: none;
+  }
+  
+    
+  }
+
 
     
   
@@ -425,13 +434,14 @@ body .article-container:nth-child(odd) summary .title-container h3{
 body .article-container:nth-child(odd) summary .title-container h4{
   align-self: flex-start;
 }
+@media screen and (max-width:1024px){
 
-.article-container article {
-  padding: 1.1rem;
-  line-height: 1.25;
-  font-size: 1rem;
-}
-
+  .footer-all {
+    display: none;
+  }
+  
+    
+  }
 .title-container h3 {
   align-self: flex-end;
 }
@@ -462,4 +472,6 @@ body .article-container:nth-child(odd) summary .title-container h4{
   }
 
 }
+
+
 /* Fin CSS Théo */
