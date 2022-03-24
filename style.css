@@ -61,7 +61,7 @@ body h1, h2, h3, h4, h5, h6 {
 }
 
 .subtitle {
-  padding: 0 1.1rem 0 1.1rem ;
+  padding: 1rem 1.1rem 0 1.1rem ;
   text-align: center;
 }
 
@@ -79,7 +79,7 @@ body h1, h2, h3, h4, h5, h6 {
 }
 
 .courses {
-  padding: 1.1rem;
+  padding: 1rem 1.1rem 0 1.1rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -149,6 +149,7 @@ body h1, h2, h3, h4, h5, h6 {
 /* Début CSS Simon */
 p {
   font-size: 1rem;
+  text-align: justify;
 }
 
 header {
@@ -214,7 +215,7 @@ details > summary::-webkit-details-marker {
 
 .lead-h2 {
   text-align: center;
-  padding: 0.5rem 1.1rem 0.5rem 1.1rem;
+  padding: 0.5rem 1.1rem 1rem 1.1rem;
   font-size: large;
 }
 
@@ -331,6 +332,7 @@ li h4 {
 
 .jeu {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .jeu h2 {
@@ -493,7 +495,7 @@ body .article-container:nth-child(odd) summary .title-container h3{
   text-align: left;
 }
 
-body .article-container:nth-child(odd) summary .title-container h4{
+body .article-container:nth-child(odd) summary .title-container h5{
   text-align: left;
 }
 
@@ -501,7 +503,7 @@ body .article-container:nth-child(odd) summary .title-container h4{
   width: 100%;
   text-align: end;
 }
-.title-container h4 {
+.title-container h5 {
   width: 100%;
   text-align: end;
 }
