@@ -2,6 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+}
+
+/*
+-webkit-filter: grayscale(100%);   
+
+filter: grayscale(100%);
+
+*/
+
+.old-school * {
+-webkit-filter: grayscale(100%);   
+filter: grayscale(100%);
+font-family: "oldNewsPapers";
 }
 
 @font-face {
@@ -17,6 +31,16 @@
 @font-face {
   font-family: "varela";
   src: url("VarelaRound-Regular.ttf");
+
+}
+
+@font-face {
+  font-family: "oldLondon";
+  src: url(OldLondon.ttf);
+}
+@font-face {
+  font-family: "oldNewsPapers";
+  src: url(OldNewspaperTypes.ttf);
 }
 
 :root {
@@ -294,15 +318,17 @@ margin-left: 2rem;
     
   }
 
+  .jeu {
+    text-align: center;
+  }
+
+  .jeu h2 {
+    padding: 1rem;
+  }
 
     
   
 
-/*     Changer couleur img noir et blanc 
-
--webkit-filter: grayscale(100%); /* Chrome, Safari, Opera 
-
-filter: grayscale(100%); Firefox */
 
 
 /* Fin CSS Quentin */
