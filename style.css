@@ -204,7 +204,7 @@ details > summary::-webkit-details-marker {
 .lead-img {
   max-width: 100%;
   margin: auto;
-  margin-bottom: 1rem; 
+  margin: 0 1.1rem 1.1rem 1.1rem; 
   border-radius: 0.5rem;
 }
 
