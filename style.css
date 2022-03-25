@@ -238,6 +238,7 @@ details > summary::-webkit-details-marker {
   justify-content: space-around;
   background: var(--background-color);
   border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   padding: 1.1rem;
   font-weight: bold;
 }
