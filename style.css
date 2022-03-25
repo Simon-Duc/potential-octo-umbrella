@@ -232,7 +232,7 @@ details > summary::-webkit-details-marker {
 .navbar {
   display: flex;
   justify-content: space-around;
-  background: #FFFFF0);
+  background: var(--background-color);
   border-top: 1px solid lightgrey;
   padding: 1.1rem;
   font-weight: bold;
