@@ -2,9 +2,9 @@ function getValue() {
     let random = Math.floor(Math.random() * 2)
     console.log(random)
     if (random === 0){
-        alert ("Vrai !")
+        alert ("Vrai ! 	✅")
         }
-    else alert ("Faux !")     
+    else alert ("Faux ! ❌")     
     }
 
 if (window.matchMedia("(min-width: 1024px)").matches) {
