@@ -6,56 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wild Post</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
 </head>
 <body>
-    
-    <!-- Début partie Simon -->
-  
-  <header>
-        <input class="switch-mode-button" type="button" value="2014">
-        <img class="logo" src="images/wild-post-logo.png" alt="logo">
-        <div class="menu">
-            <details class="menu-details">
-                <summary class="menu-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </summary>
-                <div class="social-networks">
-                    <ul class="button">
-                        <li><a href="https://www.facebook.com/WildCodeSchool/">
-                            <img src="/images/logo-facebook.png" alt="facebook"></a></li>
-                        <li><a href="https://twitter.com/wildcodeschool">
-                            <img src="/images/logo-twitter.png" alt="twitter"></a></li>
-                        <li><a href="https://github.com/WildCodeSchool">
-                            <img src="/images/logo-github.png" alt="github"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw">
-                            <img src="/images/logo-youtube.png" alt="youtube"></a></li>
-                        <li><a href="https://www.instagram.com/wildcodeschoolofficial/?hl=en">
-                            <img src="/images/logo-instagram.png" alt="instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/school/wild-code-school/">
-                            <img src="/images/logo-linkedin.png" alt="linkedin"></a></li>
-                    </ul>
-                </div>
-            </details>
-        </div>
 
+  
+    <!-- Début partie Simon -->
+    <header>
+        <div class="logo-flex">
+          <img class="logo" src="images/wild-post-logo2.png" onclick="document.body.classList.toggle('old-school')" alt="logo">       
+        <!-- </div>
+            <ul class="button">
+                <li><a href="https://www.facebook.com/WildCodeSchool/">
+                    <img src="images/logo-facebook.png" alt="facebook"></a></li>
+                <li><a href="https://twitter.com/wildcodeschool">
+                    <img src="images/logo-twitter.png" alt="twitter"></a></li>
+                <li><a href="https://github.com/WildCodeSchool">
+                    <img src="images/logo-github.png" alt="github"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw">
+                    <img src="images/logo-youtube.png" alt="youtube"></a></li>
+                <li><a href="https://www.instagram.com/wildcodeschoolofficial/?hl=en">
+                    <img src="images/logo-instagram.png" alt="instagram"></a></li>
+                <li><a href="https://www.linkedin.com/school/wild-code-school/">
+                    <img src="images/logo-linkedin.png" alt="linkedin"></a></li>
+            </ul>
+        </div> -->
     </header>
-    <div class="lead-article">
-        <details class="lead-details">
-            <summary class="lead-summary">
-                <img class="lead-img" src="https://picsum.photos/400/200" alt="Random image">
-                <h1 class="lead-h1">Lorem ipsum dolor</h1>
-                <h2 class="lead-h2">Repellat dolor, earum excepturi dolore perspiciatis</h2>
-            </summary>
-            <p class="lead-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure omnis facilis repudiandae voluptates laborum architecto eos delectus libero recusandae soluta officia modi veritatis cumque accusamus, enim atque impedit minima.
-            Ad id cupiditate, inventore enim, perferendis vero iusto quis mollitia hic fugiat qui aspernatur? Ea minima laboriosam inventore aspernatur, tenetur neque delectus dolores illum, dolor maiores maxime architecto? </p>
-        </details>
-    </div>
+    <article class="lead-article" id="lead-article">
+        <img class="lead-img" src="images/photo-de-classe.jpg" alt="Random image">
+        <h1 class="lead-h1"> Bienvenue au Wild Post</h1>
+        <h2 class="lead-h2">Un journal pour les futurs Wilders... Et pas que.</h2>
+        <p class="lead-paragraph">Coucou, on est 4 Wilders de Reims, promotion 2022, et on a eu envie de vous faire partager nos premières impressions à la Wild Code School après 4 semaines de formation, et les bons conseils de ceux qui nous entourent. On s'est dits que ces quelques interviews, conseils, actus et présentations des cours pourraient être utiles à ceux qui hésitent à franchir le pas pour concrétiser un projet de reconversion professionnelle, étudier la possibilité de devenir développeur web, ou encore candidater à la Wild. Bon scroll !</p>
+    </article>
 
     <!-- Fin partie Simon --> 
   
     <!-- Début partie Théo -->
+
+    <h2 class="subtitle">🤖 Into the Wild ... 🤖</h2>
+
+    <details class="article-container" id="sec-article">
+        <summary>
+        <div class="img-container">
+          <img src="images/romain.png" alt="Romain Guillemot ">
+        </div>
+        <div class="title-container">
+          <h3>Romain Guillemot, Lead Instructor JS</h3>
+          <h5>"Pour devenir dev’: motivation et persévérance"</h5>
+        </div>
+        </summary>
+        <article>
+                        
+            <p class ='question'>Pourrais-tu te décrire en quelques mots ?</p>
+            
+            <p class ='answer'>Bonjour, je suis dev’, j’ai écrit mes premières lignes de code en 2003, cela fera 20 ans l'année prochaine. 
+            Suite à diverses expériences, je me suis orienté sur le développement web et vers la formation de développeurs.</p>
+                
+            <p class ='question'>Quelle est ta formation ?</p>
+            
+            <p class ='answer'> J’ai fait un DUT informatique à l’IUT de Reims, option imagerie numérique, puis une licence pro’ dans la même spécialité. J’ai ensuite poussé jusqu'à une année de Master, que j’ai passée à l’étranger afin d'apprendre l’anglais.</p>
+                                    
+            <p class ='question'>En quoi consiste ton rôle à la Wild Code School aujourd’hui ?</p>
+            
+            <p class ='answer'>Je suis formateur en JavaScript et en PHP à la Wild Code School de Reims, et j’ai depuis peu un nouveau rôle au sein de la Wild : je suis lead formateur pour toute l’équipe JavaScript du groupe,  qui comprend 20 formateurs et teaching assistants en France et en Europe. Cela consiste à animer l'équipe et s'assurer de la qualité des contenus, définir le programme pédagogique pour être en phase avec le marché, mettre à jour les différents contenus de cours.</p>
+                        
+            <p class ='question'>Pourrais-tu nous décrire une journée-type de ton travail à la Wild ?</p>
+            
+            <p class ='answer'>Il y a d’abord le rituel du stand-up avec les élèves pour faire un tour de table, savoir où ils en sont, et me permettre de donner le fil conducteur de la journée et de la semaine, donner des informations importantes, guider les gens dans la formation. Ensuite, il s’agit d’animer des ateliers, des cours, des live-codings, aider à débugger des projets, et les réunions auprès des autres formateurs JavaScript.</p>
+                
+            <p class ='question'>Que répondrais-tu aux personnes, notamment des potentiels futurs Wilders, s’interrogeant sur la difficulté et l'intensité des cours pendant ces formations ?</p>
+                
+            <p class ='answer'>On essaie au max de rendre accessible ces formations mais ça reste un métier difficile, il faut rentrer dans un autre univers et une autre logique. C'est surtout quelque chose qui demande de la persévérance et des nouvelles manières de réfléchir, au delà de toute compétence technique. Pour se lancer dans le métier de dev’, le plus important c’est la motivation et la persévérance.</p>
+            </article>
+        
+      </details>
+
+      <details class="article-container">
+        <summary>
+        <div class="img-container">
+          <img src="images/alexandra.png" alt="Alexandra">
+        </div>
+        <div class="title-container">
+            <h3>Alexandra De Brito, élève à la Wild</h3>
+            <h5>"Un tremplin pour accéder à la vie que je veux"</h5>
+        </div>
+        </summary>
+        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+        
+      </details>
+
+
     <!-- Fin partie Théo --> 
   
     <!-- Début partie Quentin -->
@@ -64,74 +104,179 @@
     
     <ul>
         <li>
-            <h4>Nos Évenements</h4>
-            <div class="actu">
+            <h2 class="subtitle">🎉 Nos Événements 🎉</h2>
+            <div class="actu" id="actus">
                 <div id="test1"> 
                     <h5> Wild Talk (en ligne) - Data engineer : métier, opportunités, formation .</h5>
                     <h6> 31 Mar à 18:00 </h6>
+                     <a href="https://www.eventbrite.fr/e/billets-wild-talk-data-engineer-metier-opportunites-formation-300550172657">
                     <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F249312419%2F430755355196%2F1%2Foriginal.20220317-091817?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=a447c7fc6dbe873287b16acf9361b150" alt="1">
+                     </a>
                 </div>
                 
                 <div id="test2">
                     <h5> Wild Info Métier (en ligne) - Apprenez-en plus sur les métiers de la Tech</h5>
-                    <h6>05 Avr à 18:00</h6>                    
+                    <h6>05 Avr à 18:00</h6>  
+                    <a href="https://www.eventbrite.fr/e/billets-wild-info-metier-apprenez-en-plus-sur-les-metiers-de-la-tech-252127428927">                  
                     <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F215487129%2F430755355196%2F1%2Foriginal.20220120-153021?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=78db99ab8e74885165ca364f93bd6075" alt="2">
+                    </a>
                 </div>
                 <div id="test3">
                     <h5>Wild Talk (en ligne) - Rendre la cybersécurité accessible à tous : métier, formations </h5>  
-                    <h6>05 Avr à 18:00</h6>                  
+                    <h6>05 Avr à 18:00</h6>  
+                    <a href="https://www.eventbrite.fr/e/billets-wild-talk-rendre-la-cybersecurite-accessible-a-tous-metier-formations-300567644917">                
                     <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F249342869%2F430755355196%2F1%2Foriginal.20220317-104249?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=b31e56982270e3f844ee225e71eeb173" alt="3">
+                    </a>
                 </div>
                 <div id="test4">
-                    <h5>Tech Workshop (en ligne) - Apprend à coder </h5>
-                    <h6> 11 Avr à 11:00 </h6>
-                    <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F237925789%2F313277869176%2F1%2Foriginal.20220228-143557?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=5%2C0%2C1560%2C780&s=e813805455a6cd849b89f5a3948d2d04" alt="4">
+                    <h5>Wild Info Financement - Financer sa formation à la Wild Code School</h5>
+                    <h6>08 Avr à 12:00</h6>
+                    <a href="https://www.eventbrite.fr/e/billets-wild-info-financement-financer-sa-formation-a-la-wild-code-school-252129304537">
+                    <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F215494999%2F430755355196%2F1%2Foriginal.20220120-154042?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=ae6f42524b79f5c70251f528aac31cd2" alt="4">
+                    </a>
                 </div>
                 <div id="test5">
                     <h5> Wild Breakfast - Découvrez la Wild Code School Reims  </h5>    
-                    <h6> 28 Avr à 08:45 </h6>                
+                    <h6> 28 Avr à 08:45 </h6>
+                    <a href="https://www.eventbrite.fr/e/billets-wild-breakfast-decouvrez-la-wild-code-school-reims-287900848187">              
                     <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F237957159%2F313277869176%2F1%2Foriginal.20220228-151737?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=1%2C0%2C1144%2C572&s=a178426b7a58609745baf49360ee7006" alt="5">
+                    </a>
                 </div>
             </div>
         </li>
     </ul>
 
-    <!-- Fin partie Quentin -->  
-  
+    <!-- Fin partie Quentin -->
+    
+    <h2 class="subtitle">🚀 After the Wild ... 🚀</h2>
+    
+    <details class="article-container">
+        <summary>
+        <div class="img-container">
+          <img src="images/robin.png" alt="Robin Jonval">
+        </div>
+        <div class="title-container">
+            <h3>Robin Jonval, Teaching Assistant</h3>
+            <h5>"Une formation intense, mais pas forcément difficile"</h5>
+
+        </div>
+        </summary>
+        <p>            
+            <p class='question'>Comment en es-tu arrivé à faire du développement web ?</p>
+            
+            <p class='answer'>Je baigne dans l'informatique depuis mes 6-7 ans, mon père est dev’, j'ai appris à décortiquer et à bidouiller les PC et le fonctionnement de Windows. Ensuite, j'ai fait de l'informatique au collège sur le Site du Zéro en autodidacte, avec comme objectif de gérer des conditions sur des jeux vidéos de gestion. Je suis revenu au dev’ pendant la crise sanitaire, je me suis demandé ce que je voulais vraiment faire de ma vie professionnelle et ça a été assez clair pour moi de m’orienter vers le web.</p>
+            
+            <p class='question'>Ton cursus avant la Wild ?</p>
+            
+            <p class='answer'>J’ai suivi un cursus scientifique au lycée, option maths et mécanique théorique. Après le lycée, j’ai fait des missions d’intérim diverses. Ensuite, j’ai fait une prépa compétences à l’AFPA, puis une remise à niveau informatique à la Y Schools à Reims. Et enfin, j’ai intégré la Wild Code School en suivant la formation développeur PHP en 5 mois.</p>
+            
+            <p class='question'>Comment tu as vécu ta formation à la Wild ?</p>
+            
+            <p class='answer'>Ça s'est très bien passé, c'est vrai qu'on tâtonne de temps en temps, mais j'étais à l'aise pendant les premières semaines grâce à ma remise à niveau info. Comme j'avais un peu d'avance sur certains de mes camarades, ils venaient facilement me voir pour me demander de l'aide. Ça m'a conforté dans l'idée de faire un stage de teaching assistant, et quand l'annonce a été postée en interne, je me suis tout de suite positionné. Pour revenir à la formation, c'est vrai que c'était intense, mais pas forcément difficile, même s'il y a eu 2 semaines en milieu de formation qui étaient très denses au niveau de la quantité des contenus. Ce qui change par rapport à un cursus scolaire classique, c'est l'ordre des apprentissages et c'est plus bienveillant. Je n'ai pas eu trop de mal car j'étais du genre à vite assimiler les contenus.</p>
+            
+            <p class='question'>En quoi consiste ce rôle de Teaching Assistant ?</p>
+            
+            <p class='answer'>Avec Romain, le lead formateur, on se partage les missions de formateur : cours, workshops, live codings, entretiens techniques pour les futurs Wilders. Et je suis là pour aider les Wilders dès qu'ils en ont besoin, dans leurs projets ou les exercices. Je n'étais pas stressé pour la rentrée, sauf pour le premier cours et mon premier live coding, le "syndrome de l'imposteur" est revenu à ces moments-là. Et le bonus, c'est qu'ayant fait le cursus PHP à la Wild quelques mois plus tôt, je découvre une nouvelle techno durant mon stage: JavaScript.</p>
+            
+            <p class='question'>Un petit conseil à donner à ceux qui hésitent encore à s’inscrire ?</p>
+            
+            <p class='answer'>Faites bien la formation gratuite de 10h sur le site de la Wild, elle permet de bien faire son tech challenge à présenter pour intégrer la formation. Il faut un peu de logique au départ, même si ça peut s'apprendre plus ou moins difficilement. C'est bien de faire un peu de pratique d'algorithmes de temps en temps: pour expliquer quelque chose à ta machine, il faut raisonner comme si tu expliquais à un enfant de 5 ans comment exécuter une action. L'algorithmie développe un côté pédagogue car il faut faire comprendre, donc lui apprendre, quelque chose à une machine. Encore un lien avec ma volonté d'enseigner ! La passion, on en parle souvent, mais ce n'est pas la motivation de tous, cependant il faut au minimum être curieux et savoir chercher les informations. Cette formation demande un certain budget et de mettre un peu sa vie en parenthèse pendant 5 mois, mais si c'est ce que tu veux, fonce !</p>
+                    
+      </details>
+
+      <details class="article-container">
+        <summary>
+        <div class="img-container">
+          <img src="images/virginie.png" alt="Virginie">
+        </div>
+        <div class="title-container">
+          <h3>Virginie Faucheux, Quartier Libre</h3>
+          <h5>"Il faut savoir sortir de sa zone de confort"</h5>
+        </div>
+        </summary>
+        <article>
+            <p class='question'>Pourrais-tu nous dire quelques mots sur ton parcours professionnel ?</p>
+
+            <p class='answer'>Je travaille en tant que responsable des affaires administratives pour la société Le Bloc qui gère le projet "Quartier Libre", et ce, depuis le début de l'aventure. J'ai travaillé auparavant pour un Apple Center et pour la société d'intérim Adecco, puis je suis retournée à la fac' pour faire un master après une validation des acquis professionnels. Ensuite j'ai travaillé dans un théâtre et une boite de production. Je suis rentré à l'association Velours auprès d'Arnaud Bassery, un des fondateurs, en octobre 2015 dans un rôle administratif. Il a ensuite fondé le Bloc dans la continuité de Velours et je l'ai suivi.<
+
+            <p class='question'>Peux-tu nous en dire plus sur Quartier Libre ?</p>
+
+            <p class='answer'>L'idée de départ est de créer un lieu où peuvent cohabiter tous les corps de métiers, des acteurs économiques et culturels différents, les résidents sont consciencieusement choisis. Il y a eu fin 2016 une première expérience de 3 mois dans cette logique près de la Cathédrale, Arnaud Bassery a ensuite créé la SAS Le Bloc pour renouveler le concept. Après une étape dans les locaux de la Capsule à la Chambre de Commerce et d'Industrie de la Marne, Quartier Libre occupe depuis juin 2018 deux nouveaux locaux de 1000m2 chacun : La Petite Halle rue Vernouillet qui contient un bar et une salle de concert, et le QG rue Saint-Brice, là où est basée la Wild encore aujourd'hui et un certain nombres d'entreprises variées.</p>
+
+            <p class='question'>Quelles sont les autres activités du Bloc ?</p>
+
+            <p class='answer'>Le Bloc ne se fixe pas de limite dans ses activités, ce qui nous a par exemple amené à travailler sur un projet pour EDF qui consistait à créer une application de réalité augmentée sur des salons fonctionnant avec des casques de réalité virtuelle. On participe à des évenements, comme au Marché de Noël de Reims à l'époque ou encore au Cabaret Vert. Le Bloc a créé un espace événementiel à Reims en 2021 qui se nomme Magasin Libre, cela a duré tout l'été avec de nombreux concerts et autres événements. Il y a aussi plusieurs évenements chaque semaine à la Petite Halle: concerts, cours de danse, conférences, after works, soirées roller discos, un Rendez-Vous des Résidents et autres !</p>
+
+            <p class='question'>Comment la Wild Code School et Le Bloc en sont-ils arrivés à travailler ensemble ?</p>
+
+            <p class='answer'>Le Bloc a été contacté par la Wild pour s'implanter à Reims en février 2018. À l'époque, nous étions dans les locaux de la CCI en attendant d'en trouver des nouveaux. La Wild a ensuite suivi Quartier Libre lors de l'implantation dans les locaux actuels rue Saint-Brice.</p>
+
+            <p class='question'>Quartier Libre accueille la Wild Code School et plusieurs sociétés liées à la tech', est-ce que Le Bloc cherche à développer la proximité avec ce milieu ?</p>
+
+            <p class='answer'>Oui, effectivement, au départ l'impulsion a été donnée dans ce sens par les fondateurs et notamment par Maxime Valette co-fondateur du site et de la marque VDM, de BetaSeries et de 5euros, et qui a également des responsabilités au sein de la French Tech East.</p>
+
+            <p class='question'>Tu as parlé de ta reconversion professionnelle un peu plus tôt, aurais-tu un conseil à donner aux futurs Wilders qui en envisagent une ?</p>
+
+            <p class='answer'>Il ne faut pas se mettre de freins. Il faut essayer de ne pas dire non quand on nous propose un projet, et donc savoir sortir de sa zone de confort. C'est important aussi de savoir s'entourer.</p>
+            </article>
+      </details>
     <!-- Début partie Jaafar -->
+    <h2 class="subtitle">📚 Contenu des cours 📚</h2>
     <!--Je crée 4 details pour chaque partie de contenu de cours désirée.-->
-    <details class="courses-details"><!--La sous partie HTML/CSS-->
-        <summary class="subparts">HTML/CSS</summary> <!--Chaque summary a la classe subprograms pour pouvoir leur appliquer le même CSS afin de garder une continuité sur la page et ne pas surcharger en couleur-->
-        <div id="html-css-course"> <!--Chaque div a son propre id pour pouvoir les personnaliser avec une image de fond, ici la partie HTML/CSS-->
-    Be sure to set the attribute 'open' within the 'details' element, and use a 'div' or another tag
-    to support a unique 'class' or 'id' name such as 'uniqueDetailsDiv'
-        </div>
-    </details>
-    <details class="courses-details"><!--La sous partie Javascript-->
-        <summary class="subparts">Javascript</summary>
-        <div id="javascript-course">
-    Be sure to set the attribute 'open' within the 'details' element, and use a 'div' or another tag
-    to support a unique 'class' or 'id' name such as 'uniqueDetailsDiv'
-        </div>
-    </details>
-    <details class="courses-details"><!--La sous partie React-->
-        <summary class="subparts">React</summary>
-        <div id="react-course">
-    Be sure to set the attribute 'open' within the 'details' element, and use a 'div' or another tag
-    to support a unique 'class' or 'id' name such as 'uniqueDetailsDiv'
-        </div>
-    </details>
-    <details class="courses-details"><!--La sous partie Méthodes Pédagogiques-->
-        <summary class="subparts">Méthode pédagogique</summary>
-        <div id="teaching-methods">
-    Be sure to set the attribute 'open' within the 'details' element, and use a 'div' or another tag
-    to support a unique 'class' or 'id' name such as 'uniqueDetailsDiv'
-        </div>
-    </details>
+  
+    <div class="courses" id="cours">
+        <details class="courses-details"><!--La sous partie HTML/CSS-->
+            <summary>
+                <div class="subparts">Quêtes et Dojos</div>
+                <img class="list-style" src="images/down-arrow-1.png" alt="flèche">
+            </summary> <!--Chaque summary a la classe subprograms pour pouvoir leur appliquer le même CSS afin de garder une continuité sur la page et ne pas surcharger en couleur-->
+            <ul id="quests"> <!--Chaque liste a son propre id pour pouvoir les personnaliser avec une image de fond, ici la partie HTML/CSS-->
+                <li>Quêtes : exercices sur la plateforme Odyssey découpés en expéditions par semaine</li>
+                <li>Validation par les paires</li>
+                <li>Dojos : exercices de résolution d'algorithmes</li>
+                <li>En équipe et chronométrés</li>
+            </ul>
+        </details>
+        <details class="courses-details"><!--La sous partie Javascript-->
+            <summary>
+                <div class="subparts">Live Coding</div>
+                <img class="list-style" src="images/down-arrow-1.png" alt="flèche">
+            </summary>
+            <ul id="live-coding">
+                <li>Séance de coding réalisée en direct par le formateur</li>
+                <li>Correction d'exercices de quêtes ou de workshops</li>
+                <li>Interactivité avec les Wilders</li>
+            </ul>
+        </details>
+        <details class="courses-details"><!--La sous partie React-->
+            <summary>
+                <div class="subparts">Cours</div>
+                <img class="list-style" src="images/down-arrow-1.png" alt="flèche">
+            </summary>
+            <ul id="lessons">
+                <li>Après les quêtes sur un sujet donné</li>
+                <li>Notions vues quelques heures avant en quête</li>
+                <li>Enregistrés et disponibles sur Odyssey</li>
+                <li>Bases théoriques solides pour les projets</li>
+            </ul>
+        </details>
+        <details class="courses-details"><!--La sous partie Méthodes Pédagogiques-->
+            <summary>
+                <div class="subparts">Projets</div>
+                <img class="list-style" src="images/down-arrow-1.png" alt="flèche">
+            </summary>
+            <ul id="projects">
+                <li>3 projets en équipe validés et présentés aux formateurs</li>
+                <li><a href="https://nibor51.github.io/scaling-journey/">Exemple de projet 1</a></li>
+                <li><a href="https://wildcodeschool.github.io/reims-js-2103-project2-age-of-memory/">Exemple de projet 2</a></li>
+                <li><a href="https://github.com/Superzut44/marche-conclu">Exemple de projet 3</a></li>
+            </ul>
+        </details>
+    </div>
     <!-- Fin partie Jaafar --> 
     <ul>
         <li>
-            <h4>Nos Partenaires </h4>
+            <h2 class="subtitle">🤝🏻 Nos Partenaires 🤝🏻</h2>
             <div class="scroll">
                 <div> 
                     <img src="https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,f_auto,h_60/v1/companies/vxtfxvc76kxkzqcdoiwq" alt="Partenaire 1">
@@ -161,6 +306,40 @@
             </div>
         </li>
     </ul>
-    
+    <div class="jeu">
+        <h2>🔮 Jeu de divination ! 🔮 </h2>
+        <input type="text" placeholder="Poser votre question " id="in">
+        <button type="button" onclick="getValue();">Envoie ta Question </button>
+    </div>
+    <footer class="footer-all">
+        <div class="footer-left">
+            <img src="images/logo-wild-code-school.png" alt="logo-wild-code-school">
+        </div>
+        <div class="footer-right">
+            <h3>Les réseaux de la Wild Code School !</h3>
+            <ul class="button-desktop">
+                <li><a href="https://www.facebook.com/WildCodeSchool/">
+                    <img src="images/logo-facebook.png" alt="facebook"></a></li>
+                <li><a href="https://twitter.com/wildcodeschool">
+                    <img src="images/logo-twitter.png" alt="twitter"></a></li>
+                <li><a href="https://github.com/WildCodeSchool">
+                    <img src="images/logo-github.png" alt="github"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw">
+                    <img src="images/logo-youtube.png" alt="youtube"></a></li>
+                <li><a href="https://www.instagram.com/wildcodeschoolofficial/?hl=en">
+                    <img src="images/logo-instagram.png" alt="instagram"></a></li>
+                <li><a href="https://www.linkedin.com/school/wild-code-school/">
+                    <img src="images/logo-linkedin.png" alt="linkedin"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <nav class="sticky">
+        <ul class="navbar">
+            <li><a href="#lead-article">Main</a></li>
+            <li><a href="#sec-article">Interviews</a></li>
+            <li><a href="#actus">Actualités</a></li>
+            <li><a href="#cours">Cours</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

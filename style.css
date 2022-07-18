@@ -2,159 +2,169 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+}
+
+/*
+-webkit-filter: grayscale(100%);   
+
+filter: grayscale(100%);
+
+*/
+
+.old-school * {
+-webkit-filter: grayscale(100%);   
+filter: grayscale(100%);
+font-family: "oldNewsPapers";
 }
 
 @font-face {
   font-family: "WCS";
-  src: url("/HAIDUO1H.TTF");
+  src: url("HAIDUO1H.TTF");
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url("Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "varela";
+  src: url("VarelaRound-Regular.ttf");
+
+}
+
+@font-face {
+  font-family: "oldLondon";
+  src: url(OldLondon.ttf);
+}
+@font-face {
+  font-family: "oldNewsPapers";
+  src: url(OldNewspaperTypes.ttf);
 }
 
 :root {
-  --primary-color: #f76c6c;
+  --primary-color: #df9393;
   --primary-font: 'WCS';
-  --background-color: whitesmoke;
+  --background-color: #FFFFFF;
 }
 
-
-
-#html-css-course {
-
-  height: 50vh;
-  width: 100%;
-  
-  background-color: #f76c6c;
-  background-image: url(https://dyma.fr/assets/technos/htmlcss-logo-title.svg);
-  background-size: cover;
-  background-blend-mode: darken;
-
+body {
+  background-color: var(--background-color);
+  font-family: raleway;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-#javascript-course {
-
-  height: 50vh;
-  width: 100%;
-  
-  background-color: #f76c6c;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body h1, h2, h3, h4, h5, h6 {
+  font-family: varela;
 }
 
-#react-course {
-
-  height: 50vh;
-  width: 100%;
-  
-  background-color: #f76c6c;
-  background-image: url(https://www.datocms-assets.com/45470/1631110818-logo-react-js.png);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.subtitle {
+  padding: 1rem 1.1rem 0 1.1rem ;
+  text-align: center;
 }
 
-#teaching-methods {
+/* Début partie Jaafar */
 
-  height: 50vh;
-  width: 100%;
-  
-  background-color: #f76c6c;
-  background-image: url(https://cdn.pixabay.com/photo/2018/10/22/18/02/teacher-3765909_1280.jpg);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#courses-title {
+  text-align: center;
+  padding: 1.1rem;
 }
 
 .subparts {
-  display: block;
-  padding: 0.5rem;
-  background-color: lightslategray;
-  color: darkslategray;
+  font-weight: bolder;
+  color: black;
+  line-height: 1.25;
+}
+
+.courses {
+  padding: 1rem 1.1rem 0 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .courses-details {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: wheat;
-  line-height: 1.5;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 900px) {
-  details {
-      display: flex;
-      flex-direction: row;
+#quests, #live-coding, #lessons, #projects {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem;
+  height: 30vh;
+  gap: 1rem;
+  
+  background-color: hsl(0, 90%, 70%);
+  color: white;
+  border-radius: 15% / 25%;
+
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.list-style {
+  width: 1rem;
+  cursor: pointer;
+}
+
+
+#projects li a {
+  text-decoration: none;
+  color: inherit;
+  transition-property: color, transform;
+  transition-duration: 0.3s;
+}
+
+#projects li a:hover {
+  color: black;
+  transform: scale(1.2);
+  display: inline-block;
+}
+
+
+@media screen and (min-width: 700px) {
+ 
+  .courses {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .courses-details {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  #quests, #live-coding, #lessons, #projects {
+    border-radius: 25% / 10%;
+    height: 40vh;
   }
 }
 
-/* Début CSS Simon */
+/* Fin partie Jaafar */
 
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  margin: 0.5rem;
+/* Début CSS Simon */
+p {
+  font-size: 1rem;
+  text-align: justify;
 }
 
-.switch-mode-button {
-  background-color: #f76c6c;
-  color: black;
-  padding: 0.25rem;
-  border-radius: 0.75rem;
-  border-width: 0;
-  box-shadow: 1px 2px 2px grey;
-  font-family: 'WCS';
-  font-size: 0.75rem;
-  height: 2rem;
-  cursor: pointer;
+header {
+  order: -1;
+}
+
+.logo-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
 }
 
 .logo {
-  width: auto;
-  height: 4rem;
-}
-
-.menu {
-  cursor: pointer;
-}
-
-.menu span {
-  display: block;
-  height: 0.25rem;
-  width: 2rem;
-  margin: 0.25rem 0 0.25rem 0;
-  background-color: #f76c6c;
-  border-radius: 0.25rem;
-  box-shadow: 1px 2px 2px grey;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-}
-
-.menu-summary {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
+  max-height: 4rem;
 }
 
 details > summary {
@@ -165,68 +175,106 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-details > .social-networks {
-  border: 1px solid black;
-  height: auto;
-  background-color: white;
-  box-shadow: 4px 4px 4px grey;
-  border: 0;
-  position: fixed;
-  border-radius: 2px;
-}
 .button {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
 }
-.button li {
+.button li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
+  text-align: center;
 }
 
-.button li img {
-  width: 2rem;
-  background-color: white;
+.button li a img {
+  width: 1.5rem;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .lead-article {
-  margin: 0.5rem;
   display: flex;
   justify-content: center;
-}
-
-.lead-details {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid black;
-  cursor: pointer;
-}
-
-.lead-summary {
-  display: flex;
   flex-direction: column;
-  cursor: pointer;
+  line-height: 1.25;
 }
 
 .lead-img {
   max-width: 100%;
-  padding-bottom: 0.5rem;
   margin: auto;
+  margin: 0 1.1rem 1.1rem 1.1rem; 
+  border-radius: 0.5rem;
 }
 
 .lead-h1 {
   text-align: center;
-  font-size: 1.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1.1rem 0.5rem 1.1rem;
+  font-size: 1.75rem;
 }
 
 .lead-h2 {
   text-align: center;
-  font-size: 1rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1.1rem 1rem 1.1rem;
+  font-size: large;
 }
 
 .lead-paragraph {
-  padding-bottom: 0.5rem;
+  padding: 0 1.1rem 1.1rem 1.1rem;
+}
+
+.sticky {
+  position: sticky;
+  bottom: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: var(--background-color);
+  border-top: 1px solid lightgrey;
+  padding: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar li a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 700px) {
+  .logo {
+    max-width: 20%;
+    height: auto;
+  }
+  .lead-img {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 1rem; 
+  }
+  .lead-h1 {
+    text-align: center;
+    padding: 1rem 15% 1rem 15%;
+    font-size: 2rem;
+  }
+  .lead-h2 {
+    text-align: center;
+    padding: 0 15% 1rem 15%;
+    font-size: large;
+  }
+  .button {
+    display: none;
+  }
+  .lead-paragraph {
+    padding: 0 15% 1rem 15%;
+  }
+  .sticky {
+    top: 0;
+    bottom: initial;
+    order: -1;
+  }
 }
 
 /* Fin CSS Simon */
@@ -250,8 +298,6 @@ ul{
   flex-direction:row;
   justify-content:space-between;
   align-items: center;
-  
-   
 }
 
 /*taille image + padding */
@@ -266,19 +312,78 @@ li h4 {
   text-align: center;
 }
 
+.footer-all{
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+}
 
-    
-  
+.footer-left{
+  align-self: center;
+}
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-right h3 {
+  text-align:center;
+  color: whitesmoke;
+}
 
-/*     Changer couleur img noir et blanc 
+.jeu {
+  text-align: center;
+  padding-bottom: 1rem;
+}
 
--webkit-filter: grayscale(100%); /* Chrome, Safari, Opera 
+.jeu h2 {
+  padding: 1rem;
+}
 
-filter: grayscale(100%); Firefox */
+.button-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
 
+.button-desktop li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+}
+
+.button-desktop li a img {
+  width: 1.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  .footer-all {
+    flex-direction: row;
+  }
+  .jeu {
+    padding: 3rem 0 3rem 0;
+  }
+}
 
 /* Fin CSS Quentin */
+.partners {
+  padding-top: 1rem;
+  text-align: center;
+}
 
+.events-title {
+  margin-top: 1rem;
+  padding-top: 1rem;;
+  text-align: center;
+}
 .actu {
   width: 100%;
   overflow-x: scroll;
@@ -286,10 +391,8 @@ filter: grayscale(100%); Firefox */
   flex-direction:row;
   justify-content:space-between;
   padding: 0.5rem;
-  margin: 0.5rem;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   align-items: baseline;
+  font-size: 1rem;
 }
 
 .actu img {
@@ -358,3 +461,92 @@ filter: grayscale(100%); Firefox */
   padding: 0.2rem;
  
 }
+
+/* Début CSS Théo */
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.img-container {
+  width: 50%;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.article-container summary {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 200px;
+  max-height: 30vh;
+}
+
+body .article-container:nth-child(odd) summary {
+  flex-direction: row;
+}
+
+body .article-container:nth-child(odd) summary .title-container h3{
+  text-align: left;
+}
+
+body .article-container:nth-child(odd) summary .title-container h5{
+  text-align: left;
+}
+
+.title-container h3 {
+  width: 100%;
+  text-align: end;
+}
+.title-container h5 {
+  width: 100%;
+  text-align: end;
+}
+
+.article-container {
+  margin: 0.1rem 0 0.1rem 0;
+}
+
+.article-title {
+  text-align: center;
+}
+
+.question {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0 1rem;
+}
+
+.answer {
+  text-align: justify;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .article-container {
+    margin: 0.1rem 15vw 0.1rem 15vw;
+  }
+
+  .img-container {
+    width: 30%;
+  }
+
+  .title-container {
+    width: 70%;
+  }
+
+}
+
+
+/* Fin CSS Théo */
